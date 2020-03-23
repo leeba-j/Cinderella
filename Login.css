@@ -1,0 +1,189 @@
+body
+    {
+        background-image: url("Home.jpg");
+        background-size: cover;
+        width: 100%;
+        float: left;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+
+.Logo img
+    {
+        width: 80px;
+        height: 50px;
+        border-radius: 5px;
+    }
+ul
+    {
+        list-style-type: none;
+        float:right;
+        
+        margin-right: 10px;
+        color: white;    
+    }
+#Home, #Login
+    {
+        margin-right: 5px;
+        margin-left: 5px;
+        background-color: rgb(104, 148, 206);
+        border-radius: 5px;
+        padding: 8px;
+
+    }
+
+li span
+    {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+li
+    {
+        display: inline-block;
+    }
+
+.Content
+    {
+       
+        float: left;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        background-repeat: round;
+    }
+
+.ProfileDetails
+    {
+    margin-top: 13%;
+    float:left;
+    width:400px;
+    height: 400px;
+    padding: 15px;
+    text-align: center;
+    border-bottom-right-radius: 10px;
+    color: blue;
+    background-color: rgb(255, 255, 255, 0.7);
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 11px rgb(255, 255, 255);
+    }
+.ProfileDetails:hover
+    {
+        box-shadow: -7px 6px 117px 63px rgba(42,78,189,1);
+        border:dotted 5px rgba(42,78,189,1);
+    }
+
+.Profile
+    {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    border-radius: 55%;
+   
+        
+    }
+
+hr
+    {
+        width: 40%;
+}
+
+nav
+
+{
+    background-color:rgb(255, 255, 255, 0.7) ;
+}
+
+#Login a, #Home a
+{
+    text-decoration: none;
+    color: white;
+}
+
+#Login:hover, #Home:hover
+    {
+        opacity: 0.7;
+        padding: 13%;
+    }
+input[type=text], input[type=password]  {
+    border-radius: 4px;
+    padding: 2%;
+    width: 50%;
+    background-color: rgb(187, 208, 247);
+    border-bottom: solid 1px grey;
+    opacity: 0.7;
+  }
+input[type=text]:hover, input[type=password]:hover 
+    {
+        padding: 2.5%;
+    }
+
+
+.ProfileDetails a
+    {
+        border-radius: 10px;
+        background-color: rgb(67, 153, 233);
+        color: white;
+        width: 100%;
+        padding: 2%;
+        text-decoration: none;
+        border:ridge 4px rgb(196, 193, 193);
+    }
+.ProfileDetails a:hover
+    {
+        border:ridge 4.5px rgb(196, 193, 193);
+    }
+
+.ProfileDetails h1
+    {
+        font-family: Snell Roundhand, cursive;
+        margin-top: 20%;
+    }
+@media only screen and (max-width:600px)
+    {   body
+        {
+            /* height: 100%; */
+            background-size:cover ;
+        }
+        .ProfileDetails
+        {
+            width:300px;
+            height: 300px;
+            margin:  45% 0  45% 0;
+        }
+        .ProfileDetails h1
+        {
+        margin-top: 5%;
+        }
+   ul
+    {
+       display: none;
+    }
+    .MobileMenu
+    {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        background-color:rgb(255, 255, 255, 0.7) ;
+        bottom: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+       
+    }
+    .Menu
+    {
+       font-size: 20px;
+       text-align: center;
+       width: 50%;
+
+    }
+    .Menu:hover
+    {
+        font-size: 22px;
+    }
+
+    .glyphicon-home, .glyphicon-list-alt
+    {
+        color: blue;
+    }
+    }
